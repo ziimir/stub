@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('./assets/fonts/AmaticSC-Regular.ttf') format('opentype');
+}
+
+body {
+    font-family: AmaticSC, Arial;
+}
+
+.app {
+    background: green;
+
+    &__element {
+        background: blue;
+    }
+}

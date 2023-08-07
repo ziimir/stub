@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+
+    "module": "ESNext",
+    "moduleResolution": "node",
+
+    "importHelpers": true,
+    "downlevelIteration": true,
+
+    "allowJs": true,
+    "checkJs": false,
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "lib": ["ESNext", "dom"],
+    "target": "ESNext",
+
+    "noErrorTruncation": true,
+
+    "skipLibCheck": true,
+
+    "baseUrl": "./src"
+  },
+  "include": ["./src/**/*"]
+}

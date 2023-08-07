@@ -1,0 +1,10 @@
+html
+  head
+    title= title
+    each src in js
+        script(src= src)
+    each href in css
+        link(rel="stylesheet", href= href)
+  body
+    div#main
+        | !{reactApp}

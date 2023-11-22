@@ -1,8 +1,8 @@
 import { FC, memo } from 'react';
 import { createCn } from 'bem-react-classname';
 
-import { LikeButton } from 'components/like-button/like-button';
-import { BookMap } from 'components/book-map/book-map';
+import { BookMap } from 'entities/book-map';
+import { LikeButton } from 'features/like';
 
 import './app.css';
 

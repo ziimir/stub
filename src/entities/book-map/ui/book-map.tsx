@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import { createCn } from 'bem-react-classname';
 
 import mapImg from './images/map.jpg';
@@ -7,7 +7,7 @@ interface Props {
     className?: string;
 }
 
-export const BookMap: FC<Props> = memo((props) => {
+export const BookMap: FC<Props> = (props) => {
     const cn = createCn('book-map', props.className);
 
     return (
@@ -15,6 +15,4 @@ export const BookMap: FC<Props> = memo((props) => {
             <img width="100%" src={mapImg} />
         </div>
     );
-});
-
-BookMap.displayName = 'BookMap';
+};

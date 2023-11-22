@@ -1,4 +1,4 @@
-import { FC, memo, useState } from 'react';
+import { FC, useState } from 'react';
 import { createCn } from 'bem-react-classname';
 
 import './like-button.css';
@@ -8,7 +8,7 @@ interface Props {
     onClick?: () => void;
 }
 
-export const LikeButton: FC<Props> = memo((props) => {
+export const LikeButton: FC<Props> = (props) => {
     const cn = createCn('like-button', props.className);
 
     const [liked, setLiked] = useState(false);
@@ -29,6 +29,4 @@ export const LikeButton: FC<Props> = memo((props) => {
             <button onClick={handleButtonClick}>L_I_K_E</button>
         </div>
     );
-});
-
-LikeButton.displayName = 'LikeButton';
+};
